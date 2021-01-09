@@ -7,13 +7,22 @@ Number Plate Recognition using Tesseract OCR
 2.[Tesseract-OCR](https://github.com/tesseract-ocr/tesseract)<br />
 
 **TO Run**
-
-python ocr.py --image [path] --preprocess[type of preprocessing (optional)]<br />
+```
+python3 ocr.py --image [path] --preprocess[type of preprocessing (optional)]
+```
 Input Image
 ![Input](https://github.com/anmesh-vicky/Number-Plate-Recognition/blob/master/plate2.png)
 Output 
 ![output](https://github.com/anmesh-vicky/Number-Plate-Recognition/blob/master/runn.jpeg)
+
 ### TODO
 - [ ] Number Plate Extractor
 - [x] Denoising The Plate
 - [x] Recognition
+  
+
+## Development
+Currently only the helper functions are tested, using pytest.
+* `python3 -m venv venv`
+* `source venv/bin/activate`
+* `pip3 install -r requirements.txt`
