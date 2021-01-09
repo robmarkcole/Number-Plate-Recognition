@@ -1,25 +1,24 @@
 # Number Plate Recognition
 Number Plate Recognition using Tesseract OCR
 
-**Dependencies**
-
-1.[Opencv](https://opencv.org/)<br />
-2.[Tesseract-OCR](https://github.com/tesseract-ocr/tesseract)<br />
-
-**TO Run**
+Usage:
 ```
 python3 ocr.py --image [path] --preprocess[type of preprocessing (optional)]
 ```
-Input Image
-![Input](https://github.com/anmesh-vicky/Number-Plate-Recognition/blob/master/plate2.png)
-Output 
-![output](https://github.com/anmesh-vicky/Number-Plate-Recognition/blob/master/runn.jpeg)
+e.g.
+```
+python3 ocr.py --image plate4-uk.jpg --preprocess thresh
+```
 
-### TODO
-- [ ] Number Plate Extractor
-- [x] Denoising The Plate
-- [x] Recognition
-  
+## Results
+- `plate1.png`: number not found
+- `plate2.png`: number `ARS I986` found, CORRECT
+- `plate3-uk.jpg`: number not found
+- `plate4-uk.jpg`: number partially found, `A6BA`
+
+## References
+- https://www.pyimagesearch.com/2020/09/21/opencv-automatic-license-number-plate-recognition-anpr-with-python/
+- https://www.geeksforgeeks.org/license-plate-recognition-with-opencv-and-tesseract-ocr/
 
 ## Development
 Currently only the helper functions are tested, using pytest.
